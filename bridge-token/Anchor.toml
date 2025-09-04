@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+resolution = false
+skip-lint = false
+
+[programs.localnet]
+bridge_token = "C7JbQuFuapFwBK7oCunFyN8zSi5Hmfgrq1LZzrmiago3"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "https://devnet.helius-rpc.com/?api-key=688eadcb-6011-48c3-9ffb-c33bbdd5d7f7"
+wallet = "wallet.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
